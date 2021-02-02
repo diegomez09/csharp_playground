@@ -1,0 +1,16 @@
+C:\Users\User\Desktop\Fundamentos C#\etapaUno\bin\Debug\net5.0\etapaUno.exe
+C:\Users\User\Desktop\Fundamentos C#\etapaUno\bin\Debug\net5.0\etapaUno.deps.json
+C:\Users\User\Desktop\Fundamentos C#\etapaUno\bin\Debug\net5.0\etapaUno.runtimeconfig.json
+C:\Users\User\Desktop\Fundamentos C#\etapaUno\bin\Debug\net5.0\etapaUno.runtimeconfig.dev.json
+C:\Users\User\Desktop\Fundamentos C#\etapaUno\bin\Debug\net5.0\etapaUno.dll
+C:\Users\User\Desktop\Fundamentos C#\etapaUno\bin\Debug\net5.0\ref\etapaUno.dll
+C:\Users\User\Desktop\Fundamentos C#\etapaUno\bin\Debug\net5.0\etapaUno.pdb
+C:\Users\User\Desktop\Fundamentos C#\etapaUno\obj\Debug\net5.0\etapaUno.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Fundamentos C#\etapaUno\obj\Debug\net5.0\etapaUno.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\Fundamentos C#\etapaUno\obj\Debug\net5.0\etapaUno.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\Fundamentos C#\etapaUno\obj\Debug\net5.0\etapaUno.AssemblyInfo.cs
+C:\Users\User\Desktop\Fundamentos C#\etapaUno\obj\Debug\net5.0\etapaUno.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Fundamentos C#\etapaUno\obj\Debug\net5.0\etapaUno.dll
+C:\Users\User\Desktop\Fundamentos C#\etapaUno\obj\Debug\net5.0\ref\etapaUno.dll
+C:\Users\User\Desktop\Fundamentos C#\etapaUno\obj\Debug\net5.0\etapaUno.pdb
+C:\Users\User\Desktop\Fundamentos C#\etapaUno\obj\Debug\net5.0\etapaUno.genruntimeconfig.cache
