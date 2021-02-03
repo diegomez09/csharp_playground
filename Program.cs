@@ -28,15 +28,32 @@ namespace etapaUno
             }
             };
             escuela.Cursos = listaCursos;
-            escuela.Cursos.Add(new Curso(){ Nombre="102", Jornada = TiposJornada.Tarde });
-            escuela.Cursos.Add(new Curso(){ Nombre="202", Jornada = TiposJornada.Tarde });
+            escuela.Cursos.Add(new Curso() { Nombre = "102", Jornada = TiposJornada.Tarde });
+            escuela.Cursos.Add(new Curso() { Nombre = "202", Jornada = TiposJornada.Tarde });
             // escuela.nombre = "Escuela Dos";
+
             escuela.Pais = "Mexico";
-            // escuela.Ciudad="Guadalajara";
-            //escuela.TipoEscuela=TipoEscuela.Primaria;
+
+            Curso tmp = new Curso
+            {
+                Nombre = "Verano",
+                Jornada = TiposJornada.Noche
+            };
+
+            escuela.Cursos.Add(tmp);
+
             Console.WriteLine(escuela);
             ImprimirCursosEscuela(escuela);
+            escuela.Cursos.RemoveAll((Predicate) => Predicate.Nombre == "301");
+            Console.WriteLine("\nDESPUES\n");
+            escuela.Cursos.Remove(tmp);
+            ImprimirCursosEscuela(escuela);
         }
+
+        // private static bool Predicate(Curso obj)
+        // {
+        //     return obj.Nombre == "301";
+        // }
 
         private static void ImprimirCursosEscuela(Escuela escuela)
         {
@@ -45,7 +62,7 @@ namespace etapaUno
                 foreach (Curso i in escuela.Cursos)
                 {
                     System.Console.WriteLine("====================");
-                    Console.WriteLine(i.UniqueId+ ", "+ i.Nombre);
+                    Console.WriteLine(i.UniqueId + ", " + i.Nombre);
                 }
             }
             else
