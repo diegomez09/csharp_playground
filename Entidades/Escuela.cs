@@ -13,6 +13,8 @@ namespace CoreEscuela.Entidades
         public int AñoCreacion { get; set; }
         public string Pais { get; set; }
         public string Ciudad { get; set; }
+        public TipoEscuela TipoEscuela { get; set; }
+        public Curso[] Cursos { get; set; }
         //Constructor básico
         public Escuela(string nombre,
          int añoCreacion,
@@ -24,7 +26,6 @@ namespace CoreEscuela.Entidades
             Pais = pais;
             Ciudad = ciudad;
         }
-        public TipoEscuela TipoEscuela { get; set; }
 
         public Escuela(string nombre, int año) => (Nombre, AñoCreacion) = (nombre, año);
 
