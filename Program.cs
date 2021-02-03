@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using CoreEscuela.Entidades;
 
 namespace etapaUno
@@ -9,21 +10,26 @@ namespace etapaUno
         {
             var escuela = new Escuela("Escuela C#", 1998, TipoEscuela.Primaria,
             ciudad: "Guadalajara");
-            var arregloCursos = new Curso[3];
+            //Declaracion arreglo
+            //var arregloCursos = new Curso[3];
             //Varios objetos nuevos
-            arregloCursos[0] = new Curso()
+            var listaCursos = new List<Curso>(){
+                new Curso()
             {
                 Nombre = "101"
-            };
-            arregloCursos[1] = new Curso()
+            },
+            new Curso()
             {
                 Nombre = "201"
-            };
-            arregloCursos[2] = new Curso()
+            },
+            new Curso()
             {
                 Nombre = "301"
+            }
             };
-            escuela.Cursos = arregloCursos;
+            escuela.Cursos = listaCursos;
+            escuela.Cursos.Add(new Curso(){ Nombre="102", Jornada = TiposJornada.Tarde });
+            escuela.Cursos.Add(new Curso(){ Nombre="202", Jornada = TiposJornada.Tarde });
             // escuela.nombre = "Escuela Dos";
             escuela.Pais = "Mexico";
             // escuela.Ciudad="Guadalajara";
@@ -39,7 +45,7 @@ namespace etapaUno
                 foreach (Curso i in escuela.Cursos)
                 {
                     System.Console.WriteLine("====================");
-                    Console.WriteLine(i.UniqueId, i.Nombre);
+                    Console.WriteLine(i.UniqueId+ ", "+ i.Nombre);
                 }
             }
             else
