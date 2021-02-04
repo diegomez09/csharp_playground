@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace CoreEscuela.Entidades
@@ -17,6 +18,7 @@ namespace CoreEscuela.Entidades
         public string Ciudad { get; set; }
         public TipoEscuela TipoEscuela { get; set; }
         public List<Curso> Cursos { get; set; }
+        public string UniqueId { get; private set; } = Guid.NewGuid().ToString("N");
         //Constructor básico
         public Escuela(string nombre,
          int añoCreacion,
