@@ -27,7 +27,7 @@ namespace CoreEscuela
 
         private void CargarEvaluaciones()
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
 
         private void CargarAsignaturas()
@@ -63,10 +63,10 @@ namespace CoreEscuela
         {
             Escuela.Cursos = new List<Curso>(){
                new Curso(){ Nombre = "101", Jornada = TiposJornada.Mañana },
-                        new Curso() {Nombre = "201", Jornada = TiposJornada.Mañana},
-                        new Curso{Nombre = "301", Jornada = TiposJornada.Mañana},
-                        new Curso(){ Nombre = "401", Jornada = TiposJornada.Tarde },
-                        new Curso() {Nombre = "501", Jornada = TiposJornada.Tarde},
+                        new Curso() {Nombre = "101", Jornada = TiposJornada.Mañana},
+                        new Curso{Nombre = "101", Jornada = TiposJornada.Mañana},
+                        new Curso(){ Nombre = "101", Jornada = TiposJornada.Tarde },
+                        new Curso() {Nombre = "101", Jornada = TiposJornada.Tarde},
             };
         }
     }
